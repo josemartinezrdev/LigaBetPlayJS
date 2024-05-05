@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/boostrap/bootstrap.min.css" />
+    <script defer type="module" src="app.js"></script>
+    <script defer src="js/boostrap/bootstrap.bundle.min.js"></script>
+    <title>Liga BetPlay JS</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="card">
+              <div class="card-header">Liga BetPlay JS</div>
+              <div class="card-body">
+                <h5 class="card-title">BetPlay - Colombia - 2024</h5>
+                <p class="card-text">
+                  Aquí podrás añadir los equipos que conforman la Liga BetPlay
+                </p>
+                <form class="row g-3" id="frmTeam">
+                  <div class="col-md-6">
+                    <label for="nameTeam" class="form-label"
+                      >Nombre del Equipo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="nameTeam"
+                      id="nameTeam"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="logoTeam" class="form-label"
+                      >Escudo del Equipo</label
+                    >
+                    <input
+                      type="url"
+                      class="form-control"
+                      name="logoTeam"
+                      id="logoTeam"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="cityTeam" class="form-label">Ciudad</label>
+                    <select name="cityTeam" id="cityTeam" class="form-select">
+                      <option selected>Elegir Ciudad...</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <label for="nameTec" class="form-label"
+                      >Nombre del Técnico</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="nameTec"
+                      id="nameTec"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <div class="card border-primary mb-3">
+                      <div class="card-header">
+                        Jugadores - Liga BetPlay - 2024
+                      </div>
+                      <div class="card-body text-primary">
+                        <h5 class="card-title">Gestor Jugadores</h5>
+                        <p class="card-text">
+                          Aquí podrás añadir los jugadores de tu plantel
+                          deportivo.
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-warning"
+                          id="addPlayer"
+                        >
+                          +
+                        </button>
+                        <div class="details-player"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-primary" id="saveTeam">
+                      Guardar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
